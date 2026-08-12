@@ -1,31 +1,35 @@
+import resumeAsset from "@/assets/resume.pdf.asset.json";
+
 // EDIT ME: all personal details live here.
 export const profile = {
-  name: "Your Name",
+  name: "Sai Krishna Aligeti",
   role: "Full Stack Developer",
   tagline: "Building Future with Code",
   rotating: [
     "Full Stack Developer",
+    "MERN Stack Developer",
     "Java Developer",
-    "Problem Solver",
-    "AI Enthusiast",
+    "AI & ML Enthusiast",
   ],
   about:
-    "Hi, I'm Your Name, a passionate Full Stack Developer focused on building modern, scalable, and user-friendly web applications. I enjoy turning ideas into real digital solutions through clean code and creative design. Currently, I am continuously learning and improving my skills in both frontend and backend technologies to become an industry-ready developer.",
+    "Hi, I'm Sai Krishna Aligeti, a Computer Science Engineering student at Keshav Memorial College of Engineering with a strong foundation in full-stack web development and AI-based mobile applications. I developed a Plant Disease Classification System achieving 99.5% accuracy using CNN+ViT models with PyTorch and Flask, and built a full-stack Job Portal with the MERN stack. I enjoy turning ideas into real digital solutions through clean code, creative design, and continuous learning.",
   stats: [
     { label: "Status", value: "Fresher" },
-    { label: "Degree", value: "B.Tech CSE (AI & ML)" },
-    { label: "Graduation", value: "2026" },
+    { label: "Degree", value: "B.E. CSE" },
+    { label: "Graduation", value: "2027" },
+    { label: "CGPA", value: "7.5" },
     { label: "Mindset", value: "Fast Learner" },
     { label: "Culture", value: "Team Player" },
   ],
-  goal: "Seeking opportunities as a Full Stack Developer where I can contribute, learn, and grow by building impactful software solutions.",
-  college: "College Name",
-  degree: "Computer Science Engineering (AI & ML)",
-  gradYear: "2026",
-  email: "your.email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourusername",
-  resumeUrl: "#",
+  goal:
+    "Seeking opportunities as a Full Stack Developer where I can contribute, learn, and grow by building impactful software solutions.",
+  college: "Keshav Memorial College of Engineering",
+  degree: "Bachelor of Engineering in Computer Science Engineering",
+  gradYear: "2027",
+  email: "saikrishnaa112233@gmail.com",
+  linkedin: "https://www.linkedin.com/in/sai-krishna-aligeti-4828822b9/",
+  github: "https://github.com/SaikrishnaAligeti-12",
+  resumeUrl: resumeAsset.url,
 };
 
 export const skillGroups = [
@@ -34,73 +38,70 @@ export const skillGroups = [
     items: [
       { name: "HTML5", level: 92 },
       { name: "CSS3", level: 88 },
-      { name: "JavaScript", level: 85 },
-      { name: "React", level: 82 },
-      { name: "Tailwind CSS", level: 88 },
-      { name: "Bootstrap", level: 80 },
+      { name: "JavaScript", level: 86 },
+      { name: "React.js", level: 84 },
+      { name: "Tailwind CSS", level: 85 },
+      { name: "Bootstrap", level: 78 },
     ],
   },
   {
     title: "Backend",
     items: [
-      { name: "Java", level: 88 },
-      { name: "Spring Boot", level: 78 },
-      { name: "Node.js", level: 76 },
-      { name: "Express.js", level: 74 },
+      { name: "Java", level: 85 },
+      { name: "Node.js", level: 80 },
+      { name: "Express.js", level: 78 },
+      { name: "Python", level: 82 },
+      { name: "Flask", level: 75 },
     ],
   },
   {
-    title: "Database",
+    title: "Database & DevOps",
     items: [
-      { name: "MySQL", level: 82 },
-      { name: "MongoDB", level: 75 },
+      { name: "MySQL", level: 84 },
+      { name: "MongoDB", level: 80 },
+      { name: "Git / GitHub", level: 86 },
+      { name: "Postman", level: 80 },
     ],
   },
   {
-    title: "Tools",
+    title: "AI / ML",
     items: [
-      { name: "Git", level: 85 },
-      { name: "GitHub", level: 85 },
-      { name: "REST APIs", level: 80 },
+      { name: "Machine Learning", level: 82 },
+      { name: "PyTorch", level: 78 },
+      { name: "CNN / ViT", level: 80 },
+      { name: "Image Processing", level: 76 },
+    ],
+  },
+  {
+    title: "Tools & Soft Skills",
+    items: [
       { name: "VS Code", level: 90 },
-    ],
-  },
-  {
-    title: "Other",
-    items: [
-      { name: "OOP", level: 88 },
       { name: "Problem Solving", level: 86 },
-      { name: "Responsive Design", level: 84 },
+      { name: "Critical Thinking", level: 84 },
+      { name: "Communication", level: 82 },
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "Your Featured Project",
+    title: "Job Portal",
     description:
-      "Describe your flagship project here — the problem it solves, your approach, and the impact it delivers.",
-    stack: ["Python", "Machine Learning", "LightGBM", "SHAP", "Dashboard"],
+      "A full-stack Job Portal web application built with the MERN stack. Features include user authentication, job posting, job application and management, responsive UI, REST API integration, and secure deployment with MongoDB and GitHub version control.",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js", "REST API"],
     status: "Featured",
   },
   {
-    title: "E-Commerce Web App",
+    title: "MobilePlantViT",
     description:
-      "Full-stack storefront with product catalog, cart, secure checkout and an admin dashboard.",
-    stack: ["React", "Spring Boot", "MySQL"],
-    status: "Upcoming",
-  },
-  {
-    title: "Task Management System",
-    description:
-      "Team task board with roles, real-time status updates, deadlines and progress analytics.",
-    stack: ["React", "Node.js", "MongoDB"],
-    status: "Upcoming",
+      "An AI-powered Plant Disease Classification System that scans plant leaf images to predict diseases for early crop protection. Achieved up to 99.5% accuracy using EfficientNetV2 and a lightweight CNN + Vision Transformer (ViT) model optimized for mobile deployment.",
+    stack: ["Python", "PyTorch", "Flask", "Flutter", "MySQL", "TensorFlow Lite"],
+    status: "Featured",
   },
   {
     title: "Portfolio Website",
     description:
-      "This futuristic portfolio — animated, responsive and built with a custom design system.",
+      "This futuristic portfolio — animated, responsive and built with a custom design system using React, TypeScript and Tailwind CSS.",
     stack: ["React", "TypeScript", "Tailwind CSS"],
     status: "Live",
   },
