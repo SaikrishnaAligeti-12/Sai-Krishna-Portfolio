@@ -28,7 +28,7 @@ export function Navbar() {
           if (e.isIntersecting) setActive(e.target.id);
         });
       },
-      { rootMargin: "-45% 0px -50% 0px" },
+      { rootMargin: "-15% 0px -70% 0px" },
     );
     links.forEach((l) => {
       const el = document.getElementById(l.id);
