@@ -18,6 +18,7 @@ import { Reveal } from "./Reveal";
 import { ParticleField } from "./ParticleField";
 import { TypingText } from "./TypingText";
 import { profile, projects, skillGroups } from "@/lib/portfolio-content";
+import { supabase } from "@/integrations/supabase/client";
 
 function SectionTitle({ kicker, title }: { kicker: string; title: string }) {
   return (
