@@ -12,7 +12,7 @@ export const profile = {
     "AI & ML Enthusiast",
   ],
   about:
-    "Hi, I'm Sai Krishna Aligeti, a Computer Science Engineering student at Keshav Memorial College of Engineering with a strong foundation in full-stack web development and AI-based mobile applications. I developed a Plant Disease Classification System achieving 99.5% accuracy using CNN+ViT models with PyTorch and Flask, and built a full-stack Job Portal with the MERN stack. I enjoy turning ideas into real digital solutions through clean code, creative design, and continuous learning.",
+    "Full Stack Developer and Computer Science Engineering student at Keshav Memorial College of Engineering, focused on building production-ready web and AI products. I shipped a Plant Disease Classification System with 99.5% accuracy (CNN + ViT, PyTorch, Flask) and a full-stack MERN Job Portal with authentication and REST APIs. Strong in JavaScript, React, Node.js and Java, with a bias toward clean architecture, fast interfaces and measurable results.",
   stats: [
     { label: "Status", value: "Fresher" },
     { label: "Degree", value: "B.E. CSE" },

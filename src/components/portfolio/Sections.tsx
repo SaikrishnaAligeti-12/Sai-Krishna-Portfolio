@@ -205,9 +205,6 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-6 inline-flex items-center gap-1.5 text-sm text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                  Case study soon <ArrowUpRight size={14} />
-                </div>
               </article>
             </Reveal>
           ))}
