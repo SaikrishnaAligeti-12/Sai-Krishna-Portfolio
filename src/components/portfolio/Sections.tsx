@@ -18,6 +18,7 @@ import { Reveal } from "./Reveal";
 import { ParticleField } from "./ParticleField";
 import { TypingText } from "./TypingText";
 import { profile, projects, skillGroups } from "@/lib/portfolio-content";
+import { supabase } from "@/integrations/supabase/client";
 
 function SectionTitle({ kicker, title }: { kicker: string; title: string }) {
   return (
@@ -205,9 +206,6 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="mt-6 inline-flex items-center gap-1.5 text-sm text-primary opacity-0 transition-opacity group-hover:opacity-100">
-                  Case study soon <ArrowUpRight size={14} />
-                </div>
               </article>
             </Reveal>
           ))}
@@ -274,14 +272,24 @@ export function Goals() {
 export function Contact() {
   const [sending, setSending] = useState(false);
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
     setSending(true);
-    setTimeout(() => {
-      setSending(false);
-      toast.success("Message ready — connect a backend to deliver it.");
-      (e.target as HTMLFormElement).reset();
-    }, 700);
+    const { error } = await supabase.from("contact_messages").insert({
+      name: String(data.get("name") ?? "").trim(),
+      email: String(data.get("email") ?? "").trim(),
+      subject: String(data.get("subject") ?? "").trim() || null,
+      message: String(data.get("message") ?? "").trim(),
+    });
+    setSending(false);
+    if (error) {
+      toast.error("Could not send your message. Please try again.");
+      return;
+    }
+    toast.success("Message sent — I'll get back to you soon.");
+    form.reset();
   };
 
   const field =
