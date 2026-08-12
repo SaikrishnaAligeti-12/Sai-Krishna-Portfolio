@@ -220,7 +220,7 @@ export function Education() {
     {
       title: `${profile.college} — ${profile.degree}`,
       meta: `Graduation ${profile.gradYear}`,
-      body: "Core focus on data structures, algorithms, artificial intelligence, machine learning and full stack web development.",
+      body: "Specialization in Cyber Security, with core focus on data structures, algorithms, network and application security, artificial intelligence and full stack web development.",
     },
   ];
 
