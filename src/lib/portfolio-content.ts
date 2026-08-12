@@ -12,10 +12,10 @@ export const profile = {
     "AI & ML Enthusiast",
   ],
   about:
-    "Full Stack Developer and Computer Science Engineering student at Keshav Memorial College of Engineering, focused on building production-ready web and AI products. I shipped a Plant Disease Classification System with 99.5% accuracy (CNN + ViT, PyTorch, Flask) and a full-stack MERN Job Portal with authentication and REST APIs. Strong in JavaScript, React, Node.js and Java, with a bias toward clean architecture, fast interfaces and measurable results.",
+    "Full Stack Developer and Computer Science and Engineering (Cyber Security) student at Keshav Memorial College of Engineering, focused on building production-ready web and AI products. I shipped a Plant Disease Classification System with 99.5% accuracy (CNN + ViT, PyTorch, Flask) and a full-stack MERN Job Portal with authentication and REST APIs. Strong in JavaScript, React, Node.js and Java, with a bias toward clean architecture, fast interfaces and measurable results.",
   stats: [
     { label: "Status", value: "Fresher" },
-    { label: "Degree", value: "B.E. CSE" },
+    { label: "Degree", value: "B.E. CSE (Cyber Security)" },
     { label: "Graduation", value: "2027" },
     { label: "CGPA", value: "7.5" },
     { label: "Mindset", value: "Fast Learner" },
@@ -24,7 +24,7 @@ export const profile = {
   goal:
     "Seeking opportunities as a Full Stack Developer where I can contribute, learn, and grow by building impactful software solutions.",
   college: "Keshav Memorial College of Engineering",
-  degree: "Bachelor of Engineering in Computer Science Engineering",
+  degree: "Bachelor of Engineering in Computer Science and Engineering (Cyber Security)",
   gradYear: "2027",
   email: "saikrishnaa112233@gmail.com",
   linkedin: "https://www.linkedin.com/in/sai-krishna-aligeti-4828822b9/",
